@@ -1,2 +1,7 @@
 <h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+
+<% @pages.each do |p| %> 
+  <h2><%= p.name %></h2>
+  <p><%= p.location %></p>
+  <p><%= p.house %></p>
+<% end %>
